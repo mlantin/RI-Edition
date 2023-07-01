@@ -6,6 +6,7 @@ var st = 0;
 cover();
 featured();
 pagination(false);
+burger();
 
 window.addEventListener('scroll', function () {
     'use strict';
@@ -72,5 +73,15 @@ function featured() {
                 items: 3,
             },
         },
+    });
+}
+function burger() {
+    'use strict';
+    document.querySelector('.burger').addEventListener('click', function () {
+        if (!body.classList.contains('menu-opened')) {
+            body.classList.add('menu-opened');
+        } else {
+            body.classList.remove('menu-opened');
+        }
     });
 }
