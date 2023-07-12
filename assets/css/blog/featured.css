@@ -30,7 +30,7 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
-    border-bottom: 1px solid var(--light-gray-color);
+    border-bottom: 1px solid var(--ghost-accent-color);
 }
 
 .featured-feed {

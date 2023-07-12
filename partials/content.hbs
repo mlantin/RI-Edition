@@ -1,6 +1,6 @@
 <article class="single {{post_class}}">
 
-    <header class="single-header gh-canvas">
+    <header class="single-header kg-canvas">
         {{#is "post"}}
         <div class="single-meta">
             <span class="single-meta-item single-meta-date">
@@ -29,7 +29,7 @@
 
         {{#if feature_image}}
         {{#unless no_image}}
-            <figure class="single-media kg-width-{{width}}">
+            <figure class="single-media">
                 <img srcset="{{> "srcset"}}" sizes="(min-width: 1023px) 920px, calc(90vw)" src="{{img_url feature_image size="l"}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}">
                 {{#if feature_image_caption}}
                     <figcaption>{{feature_image_caption}}</figcaption>
@@ -93,3 +93,39 @@
     {{/is}}
 
 </article>
+
+{{!-- script to make the headers stick to the top without overlapping
+each other. This was written by Kasun. I was hoping for a CSS only
+solution but it would require putting all the content between the 
+headers as well as the header inside another element. --}}
+<script>
+const headings = document.querySelectorAll('h2');
+let previousHeading = null;
+
+headings.forEach((heading) => {
+    const span = document.createElement('span');
+    span.textContent = heading.textContent;
+    heading.style.top = 0;
+    heading.style.backgroundColor = 'var(--color-white)';
+    heading.style.zIndex = 1;
+    heading.textContent = '';
+    heading.appendChild(span);
+});
+
+window.addEventListener('scroll', function () {
+  headings.forEach((heading) => {
+    const rect = heading.getBoundingClientRect();
+    const isSticky = rect.top <= 10;
+    if (isSticky) {
+      if (previousHeading !== null) {
+        previousHeading.style.position = "static"
+      }
+      heading.style.position = "sticky"
+      previousHeading = heading;
+    } else {
+      heading.style.position = "static"
+    }
+  });
+});
+
+</script>
