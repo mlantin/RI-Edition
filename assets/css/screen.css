@@ -5,6 +5,7 @@
 @import "general/form.css";
 @import "general/icons.css";
 @import "components/ri-layout.css";
+@import "components/ri-gallery.css";
 @import "site/layout.css";
 @import "site/header.css";
 @import "site/cover.css";
@@ -23,3 +24,4 @@
 @import "misc/kg.css";
 @import "misc/portal.css";
 @import "misc/animations.css";
+@import "misc/loop.css";

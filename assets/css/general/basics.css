@@ -20,6 +20,13 @@
     --font-serif: Lora, Times, serif;
     --navbar-height: 80px;
     --content-font-size: 1.7rem;
+    --margin-item: 1vw;
+    --border-radius: 10px;
+    /* Overlay */
+    --overlay-item-image-top: .3;
+    --overlay-item-image-bottom: .7;
+    /* Posts card wrapper */
+    --max-width-cards-wrap: 950px;
 }
 
 :where(h1, h2, h3, h4, h5, h6) {

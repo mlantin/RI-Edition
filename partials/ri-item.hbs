@@ -1,0 +1,16 @@
+<article class="item{{#if feature_image}} item-image{{/if}} {{post_class}}">
+	<a href="{{url}}" class="item-link" aria-label="{{title}}"></a>
+	{{#if feature_image}}
+    <img
+        srcset="{{> "srcset"}}"
+        sizes="(max-width:480px) 400px, 750px"
+        src="{{img_url feature_image size="l"}}"
+        alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+        loading="lazy"
+    >	{{/if}}
+    <div class="item-content{{#if feature_image}} item-mask{{#has tag=" #title-top"}} is-top{{/has}} is-image{{/if}}">
+		<h2 class="item-title"><a href="{{url}}">{{title}}</a></h2>
+    </div>
+	
+
+</article>

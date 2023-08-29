@@ -38,10 +38,6 @@
     font-weight: 800;
 }
 
-.with-full-cover .logo-text {
-    color: #fff;
-}
-
 .logo-image {
   height: 50px;
   margin-top: 10px;
@@ -71,24 +67,12 @@
     margin-left: 3rem;
 }
 
-.with-full-cover:not(.menu-opened) .header-nav .menu-item,
-.with-full-cover:not(.menu-opened) .header-actions .menu-item,
-.with-alt-header:not(.menu-opened) .header-nav .menu-item,
-.with-alt-header:not(.menu-opened) .header-actions .menu-item {
-    color: #fff;
-}
-
 /* Dropdown
 /* ---------------------------------------------------------- */
 
 .menu-item-more {
     position: relative;
     margin-left: 2rem;
-}
-
-.with-full-cover:not(.menu-opened) .menu-item-more,
-.with-alt-header:not(.menu-opened) .menu-item-more {
-    color: #fff;
 }
 
 .menu-item-more .icon {
@@ -145,11 +129,6 @@
 
 .header-actions .social-item {
     margin-right: 1.8rem;
-}
-
-.with-full-cover:not(.menu-opened) .header-actions .social-item,
-.with-alt-header:not(.menu-opened) .header-actions .social-item {
-    color: #fff;
 }
 
 .header-actions .social-item + .social-item {
@@ -246,10 +225,6 @@
         background-color: var(--brand-color);
     }
 
-    .menu-opened:not(.with-full-cover):not(.with-alt-header) #site-header {
-        background-color: var(--white-color);
-    }
-
     .menu-opened #site-header .header-inner {
         grid-template-rows: auto 1fr auto;
     }
@@ -257,11 +232,6 @@
     .menu-opened #site-header .header-nav,
     .menu-opened #site-header .header-actions {
         display: flex;
-    }
-
-    .with-full-cover #site-header .menu-item,
-    .with-alt-header #site-header .menu-item {
-        color: #fff;
     }
 
     #site-header .menu-item-more {
@@ -295,22 +265,12 @@
         color: inherit;
     }
 
-    .with-full-cover #site-header .sub-menu .menu-item,
-    .with-alt-header #site-header .sub-menu .menu-item {
-        color: #fff;
-    }
-
     #site-header .social {
         margin-bottom: 1rem;
     }
 
     #site-header .social-item {
         margin: 0 1.2rem;
-    }
-
-    .with-full-cover #site-header .social-item,
-    .with-alt-header #site-header .social-item {
-        color: #fff;
     }
 
     #site-header .social-item .icon {

@@ -1,0 +1,16 @@
+
+{{#get "pages" limit="1" filter="slug:quotes" as |quotes|}}
+    {{#if quotes}}
+    <div class="quotes">
+        {{#foreach quotes}}
+            {{content}}
+        {{/foreach}}
+    </div>
+    {{/if}}
+{{/get}}
+<script>
+    const quotesList = [];
+    document.querySelectorAll('.quotes .kg-callout-card .kg-callout-text').forEach(quote => {
+        quotesList.push(quote.innerText);
+    });
+</script>

@@ -1,3 +1,9 @@
-<nav class="load-more">
-    <button class="button button-secondary gh-loadmore">Load more</button>
+<nav class="pagination-section load-more">
+	{{#if next}}
+	<div class="pagination-wrap">
+		<a href="{{page_url next}}" id="next-page"></a>
+		<button class="button button-secondary global-button gh-loadmore">{{t "Load more"}}</button>
+	</div>
+	{{/if}}
+
 </nav>

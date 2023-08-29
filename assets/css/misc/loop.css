@@ -1,0 +1,35 @@
+
+.loop-section {
+    width: 100%;
+    max-width: var(--max-width-cards-wrap);
+    margin: 4vh auto 3vh;
+    padding-bottom: 2vh;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.loop-section-intro {
+    width: 100%;
+    max-width: var(--max-width-cards-wrap);
+    margin: 4vh auto 3vh;
+    padding-bottom: 2vh;
+    padding-top: 4rem;
+}
+
+.loop-subtitle,
+.loop-wrap {
+    -webkit-animation: slideTop .8s ease;
+    animation: slideTop .8s ease;
+    will-change: transform;
+}
+
+.loop-subtitle {
+    align-items: flex-end;
+}
+
+.loop-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   /*gap:1rem;*/
+}
