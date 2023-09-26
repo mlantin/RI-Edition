@@ -1,0 +1,53 @@
+.ri-socials {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex: 4;
+}
+
+.ri-socials .social-facebook a,
+.ri-socials .social-whatsapp a,
+.ri-socials .social-x {
+    font-size: 0 !important;
+}
+
+.ri-socials .social-facebook a::before,
+.ri-socials .social-whatsapp a::before,
+.ri-socials .social-x a::before {
+    color: grey;
+    font-family: "Font Awesome 6 Brands";
+    display: inline-block;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.ri-socials .social-link {
+    padding-top: 6px;
+    cursor: pointer;
+}
+.ri-socials .social-link svg {
+    width: 30px;
+    height: 22px;
+    fill: grey;
+    stroke: grey;
+    color: grey;
+}
+.ri-socials .social-link:hover svg {
+    fill: var(--brand-color);
+    stroke: var(--brand-color);
+    color: var(--brand-color);
+}
+.ri-socials a:hover:before {
+    color: var(--brand-color);
+}
+
+.ri-socials .social-facebook a::before {content: "\f09a"}
+.ri-socials .social-whatsapp a::before {content: "\f232"}
+.ri-socials .social-x a::before {content: "\e61b"}

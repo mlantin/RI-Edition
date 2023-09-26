@@ -2,9 +2,6 @@
 
 <div class="ri-outer">
 	<h1 class="single-title center">The Drawings</h1>
-    {{#get 'posts' filter="tags:-[community-gallery,ago-community-gallery]" limit='all'}}
-        <h2>{{plural posts.length empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}</h2>
-    {{/get}}
 </div>
 
  {{#if posts}}

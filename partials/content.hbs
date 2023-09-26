@@ -46,9 +46,8 @@
     {{#is "post"}}
     <div class="gh-canvas">
     <footer class="single-footer">
-
         <div class="single-footer-left">
-            {{#prev_post}}
+            {{#prev_post in="primary_tag"}}
             <div class="navigation navigation-previous">
                 <a class="navigation-link" href="{{url}}" aria-label="Previous post">
                     <span class="navigation-icon">{{> "icons/arrow-left"}}</span>
@@ -79,7 +78,7 @@
         </div>
 
         <div class="single-footer-right">
-            {{#next_post}}
+            {{#next_post in="primary_tag"}}
             <div class="navigation navigation-next">
                 <a class="navigation-link" href="{{url}}" aria-label="Next post">
                     <span class="navigation-icon">{{> "icons/arrow-right"}}</span>

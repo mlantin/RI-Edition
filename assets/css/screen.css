@@ -6,6 +6,8 @@
 @import "general/icons.css";
 @import "components/ri-layout.css";
 @import "components/ri-gallery.css";
+@import "components/ri-gallery-item.css";
+@import "components/ri-socials.css";
 @import "site/layout.css";
 @import "site/header.css";
 @import "site/cover.css";

@@ -1,6 +1,7 @@
 .single-header {
     margin-bottom: 4.5rem;
     text-align: center;
+    place-items: center;
 }
 
 .single-meta {
@@ -9,6 +10,10 @@
     font-weight: 700;
     color: var(--secondary-text-color);
     text-transform: uppercase;
+}
+
+.single-media.bordered > img {
+    border: 2px solid var(--light-gray-color);
 }
 
 .single-meta-item + .single-meta-item::before {

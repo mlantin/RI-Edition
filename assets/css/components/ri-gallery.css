@@ -62,6 +62,10 @@
     opacity: 0;
 }
 
+.item:hover {
+    border: 2px solid var(--light-gray-color);
+}
+
 .item:hover .item-content {
     opacity: 1;
 }

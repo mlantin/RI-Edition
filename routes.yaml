@@ -1,12 +1,12 @@
-routes:
-  /gallery/:
-    controller: channel
-    template: gallery
-    
 collections:
   /:
     permalink: /{slug}/
     template: index
+    filter: "tag:blog"
+  /store/:
+    permalink: /gallery/{slug}/
+    template: gallery
+    filter: "tag:gallery"
 
 taxonomies:
   tag: /tag/{slug}/

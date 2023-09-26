@@ -1,0 +1,43 @@
+<div class="ri-socials">
+    <div class="social-whatsapp">
+        <a href="https://wa.me/?text={{encode title}} {{url absolute="true"}}" title="WhatsApp" target="_blank" rel="noopener" aria-label="WhatsApp share icon"></a>
+    </div>
+    <div class="social-x">
+        <a href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter share icon"></a>
+    </div>
+    <div class="social-facebook">
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook share icon"></a>
+    </div>
+    <div class="social-link">
+        <a class="post-share-link" title="Copy Link" id="copy" data-clipboard-text="{{url absolute="true"}}" aria-label="Copy link icon">{{>icons/copy}}</a>
+    </div>
+</div>
+
+<link href="https://cdn.jsdelivr.net/npm/semantic-ui-transition@2.5.0/transition.min.css" rel="stylesheet">    
+<link href="https://cdn.jsdelivr.net/npm/semantic-ui-popup@2.5.0/popup.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui-transition@2.5.0/transition.min.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui-popup@2.5.0/popup.min.js"></script>
+
+<script>
+    let popupTimer;
+
+    function delayPopup(popup) {
+        popupTimer = setTimeout(function () {$(popup).popup('hide');}, 2200);
+    }
+
+    $(document).ready(function () {
+        $('.post-share-link').click(function () {
+            clearTimeout(popupTimer);
+            console.log(this);
+            $(this).popup({
+                content: 'Link to post copied!',
+                on: 'manual',
+                position: 'bottom center',
+                exclusive: true }).
+            popup('show');
+
+            // Hide popup after 5 seconds
+            delayPopup(this);
+        });
+    });
+</script>

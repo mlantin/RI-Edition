@@ -1,17 +1,21 @@
 {{!< default}}
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/applause-button/dist/applause-button.css">
+<script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
 
 <main class="site-main">
 
     {{#post}}
-        {{> "content" width="wide"}}
+        {{#has tag="gallery"}}
+            {{> "content-gallery" width="wide"}}
+        {{else}}
+            {{> "content" width="wide"}}
+             {{#if @custom.show_related_posts}}
+                {{> "related-posts"}}
+            {{/if}}
+
+            {{> "comments"}}
+        {{/has}}
     {{/post}}
 
-    {{#if @custom.show_related_posts}}
-        {{> "related-posts"}}
-    {{/if}}
-
-    {{#post}}
-        {{> "comments"}}
-    {{/post}}
 
 </main>
