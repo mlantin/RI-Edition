@@ -28,22 +28,33 @@
     -webkit-font-smoothing: antialiased;
 }
 
-.ri-socials .social-link {
+.ri-socials .social-svg {
     padding-top: 6px;
     cursor: pointer;
 }
-.ri-socials .social-link svg {
-    width: 30px;
-    height: 22px;
+
+.ri-socials svg {
     fill: grey;
     stroke: grey;
     color: grey;
 }
-.ri-socials .social-link:hover svg {
+
+.ri-socials .social-link svg {
+    width: 30px;
+    height: 22px;
+}
+
+.ri-socials .social-email svg {
+    width: 28px;
+    height: 28px;
+}
+
+.ri-socials .social-svg:hover svg {
     fill: var(--brand-color);
     stroke: var(--brand-color);
     color: var(--brand-color);
 }
+
 .ri-socials a:hover:before {
     color: var(--brand-color);
 }

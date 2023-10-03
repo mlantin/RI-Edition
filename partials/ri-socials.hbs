@@ -8,8 +8,11 @@
     <div class="social-facebook">
         <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook share icon"></a>
     </div>
-    <div class="social-link">
+    <div class="social-link social-svg">
         <a class="post-share-link" title="Copy Link" id="copy" data-clipboard-text="{{url absolute="true"}}" aria-label="Copy link icon">{{>icons/copy}}</a>
+    </div>
+    <div class="social-email social-svg">
+        <a class="post-share-email" href="mailto:Enter%20an%20email?subject={{encode title}}%20from%20The%20Reluctant%20Illustrator&body=I%20thought%20you%20might%20enjoy%20this%20post%20by%20The%20Reluctant%20Illustrator:%0D%0A%0D%0A{{url absolute="true"}}" title="Share via email" aria-label="Share via email icon">{{>icons/email}}</a>
     </div>
 </div>
 
