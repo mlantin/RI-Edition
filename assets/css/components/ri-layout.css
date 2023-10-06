@@ -3,3 +3,7 @@
     padding-right: 5vw;
     text-align: center;
 }
+
+figure.bordered > img {
+    border: 2px solid var(--light-gray-color);
+}

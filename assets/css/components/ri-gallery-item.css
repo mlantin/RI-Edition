@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: flex-end;
     gap: 10px;
+    margin-top: 1.8em;
 }
 
 .ri-gallery-item > figure {
@@ -13,7 +14,7 @@
 
 .ri-gallery-item > applause-button {
     flex: 1;
-    width: 42px;
+    max-width: 42px;
     margin-bottom: 2.2em;
 }
 
@@ -30,11 +31,11 @@
 }
 
 .ri-gallery-item > applause-button .count-container .count {
-    font-size: clamp(8px,1.6vw,16px)
+    font-size: clamp(8px,1.6vw,13px)
 }
 
 .ri-gallery-item > applause-button .count-container {
-    top: clamp(-28px,-3vw,-14px);
+    top: clamp(-23px,-3vw,-14px);
 }
 
 .ri-gallery-item .shopcart {

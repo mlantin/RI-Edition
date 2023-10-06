@@ -20,7 +20,7 @@
     color: grey;
     font-family: "Font Awesome 6 Brands";
     display: inline-block;
-    font-size: 30px;
+    font-size: 24px;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -40,13 +40,13 @@
 }
 
 .ri-socials .social-link svg {
-    width: 30px;
-    height: 22px;
+    width: 24px;
+    height: 18px;
 }
 
 .ri-socials .social-email svg {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
 }
 
 .ri-socials .social-svg:hover svg {
