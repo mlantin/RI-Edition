@@ -3,10 +3,16 @@ collections:
     permalink: /{slug}/
     template: index
     filter: "tag:blog"
-  /store/:
+  /gallery/:
     permalink: /gallery/{slug}/
     template: gallery
+    data: tag.gallery
     filter: "tag:gallery"
+  /abecedaria/:
+    permalink: /abecedaria/{slug}/
+    template: gallery
+    data: tag.abecedarium
+    filter: "tag:abecedarium"
 
 taxonomies:
   tag: /tag/{slug}/
